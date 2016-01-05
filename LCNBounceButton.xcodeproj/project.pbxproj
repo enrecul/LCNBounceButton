@@ -15,6 +15,7 @@
 		6EED818C1C3B94210044CC6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EED818A1C3B94210044CC6C /* LaunchScreen.storyboard */; };
 		6EED81971C3B94210044CC6C /* LCNBounceButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EED81961C3B94210044CC6C /* LCNBounceButtonTests.m */; };
 		6EED81A21C3B94210044CC6C /* LCNBounceButtonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EED81A11C3B94210044CC6C /* LCNBounceButtonUITests.m */; };
+		6EED81B11C3B94BB0044CC6C /* LCNBounceButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EED81B01C3B94BB0044CC6C /* LCNBounceButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		6EED819D1C3B94210044CC6C /* LCNBounceButtonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LCNBounceButtonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EED81A11C3B94210044CC6C /* LCNBounceButtonUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCNBounceButtonUITests.m; sourceTree = "<group>"; };
 		6EED81A31C3B94210044CC6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EED81AF1C3B94BB0044CC6C /* LCNBounceButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCNBounceButton.h; sourceTree = "<group>"; };
+		6EED81B01C3B94BB0044CC6C /* LCNBounceButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCNBounceButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,15 +104,10 @@
 		6EED817B1C3B94210044CC6C /* LCNBounceButton */ = {
 			isa = PBXGroup;
 			children = (
-				6EED817F1C3B94210044CC6C /* AppDelegate.h */,
-				6EED81801C3B94210044CC6C /* AppDelegate.m */,
+				6EED81B21C3B94D00044CC6C /* LCNBounceButton */,
+				6EED817C1C3B94210044CC6C /* Supporting Files */,
 				6EED81821C3B94210044CC6C /* ViewController.h */,
 				6EED81831C3B94210044CC6C /* ViewController.m */,
-				6EED81851C3B94210044CC6C /* Main.storyboard */,
-				6EED81881C3B94210044CC6C /* Assets.xcassets */,
-				6EED818A1C3B94210044CC6C /* LaunchScreen.storyboard */,
-				6EED818D1C3B94210044CC6C /* Info.plist */,
-				6EED817C1C3B94210044CC6C /* Supporting Files */,
 			);
 			path = LCNBounceButton;
 			sourceTree = "<group>";
@@ -117,16 +115,22 @@
 		6EED817C1C3B94210044CC6C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6EED817F1C3B94210044CC6C /* AppDelegate.h */,
+				6EED81801C3B94210044CC6C /* AppDelegate.m */,
+				6EED81881C3B94210044CC6C /* Assets.xcassets */,
+				6EED818D1C3B94210044CC6C /* Info.plist */,
+				6EED818A1C3B94210044CC6C /* LaunchScreen.storyboard */,
+				6EED81851C3B94210044CC6C /* Main.storyboard */,
 				6EED817D1C3B94210044CC6C /* main.m */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		6EED81951C3B94210044CC6C /* LCNBounceButtonTests */ = {
 			isa = PBXGroup;
 			children = (
-				6EED81961C3B94210044CC6C /* LCNBounceButtonTests.m */,
 				6EED81981C3B94210044CC6C /* Info.plist */,
+				6EED81961C3B94210044CC6C /* LCNBounceButtonTests.m */,
 			);
 			path = LCNBounceButtonTests;
 			sourceTree = "<group>";
@@ -134,10 +138,19 @@
 		6EED81A01C3B94210044CC6C /* LCNBounceButtonUITests */ = {
 			isa = PBXGroup;
 			children = (
-				6EED81A11C3B94210044CC6C /* LCNBounceButtonUITests.m */,
 				6EED81A31C3B94210044CC6C /* Info.plist */,
+				6EED81A11C3B94210044CC6C /* LCNBounceButtonUITests.m */,
 			);
 			path = LCNBounceButtonUITests;
+			sourceTree = "<group>";
+		};
+		6EED81B21C3B94D00044CC6C /* LCNBounceButton */ = {
+			isa = PBXGroup;
+			children = (
+				6EED81AF1C3B94BB0044CC6C /* LCNBounceButton.h */,
+				6EED81B01C3B94BB0044CC6C /* LCNBounceButton.m */,
+			);
+			path = LCNBounceButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EED81841C3B94210044CC6C /* ViewController.m in Sources */,
+				6EED81B11C3B94BB0044CC6C /* LCNBounceButton.m in Sources */,
 				6EED81811C3B94210044CC6C /* AppDelegate.m in Sources */,
 				6EED817E1C3B94210044CC6C /* main.m in Sources */,
 			);
@@ -314,6 +328,7 @@
 				6EED81861C3B94210044CC6C /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		6EED818A1C3B94210044CC6C /* LaunchScreen.storyboard */ = {
@@ -322,6 +337,7 @@
 				6EED818B1C3B94210044CC6C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -413,7 +429,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = LCNBounceButton/Info.plist;
+				INFOPLIST_FILE = "LCNBounceButton/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.enrecul.LCNBounceButton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -424,7 +440,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = LCNBounceButton/Info.plist;
+				INFOPLIST_FILE = "LCNBounceButton/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.enrecul.LCNBounceButton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -498,6 +514,7 @@
 				6EED81A81C3B94210044CC6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6EED81A91C3B94210044CC6C /* Build configuration list for PBXNativeTarget "LCNBounceButtonTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +523,7 @@
 				6EED81AB1C3B94210044CC6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6EED81AC1C3B94210044CC6C /* Build configuration list for PBXNativeTarget "LCNBounceButtonUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +532,7 @@
 				6EED81AE1C3B94210044CC6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

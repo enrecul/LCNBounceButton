@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "LCNBounceButton.h"
 
 @interface ViewController ()
 
@@ -16,12 +17,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    LCNBounceButton *button = [[LCNBounceButton alloc] initWithButtonCenter:self.view.center
+                                                                 buttonSize:CGSizeMake(50, 50)
+                                                                 bloomAngle:120 bloomRadius:120
+                                                             bloomDirection:kBloomDirectionTop
+                                                                itemButtons:[NSArray array]];
+    
+    [self.view addSubview:button];
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end
