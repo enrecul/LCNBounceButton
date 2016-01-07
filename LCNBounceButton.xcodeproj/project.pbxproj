@@ -104,10 +104,10 @@
 		6EED817B1C3B94210044CC6C /* LCNBounceButton */ = {
 			isa = PBXGroup;
 			children = (
-				6EED81B21C3B94D00044CC6C /* LCNBounceButton */,
-				6EED817C1C3B94210044CC6C /* Supporting Files */,
 				6EED81821C3B94210044CC6C /* ViewController.h */,
 				6EED81831C3B94210044CC6C /* ViewController.m */,
+				6EED81B21C3B94D00044CC6C /* LCNBounceButton */,
+				6EED817C1C3B94210044CC6C /* Supporting Files */,
 			);
 			path = LCNBounceButton;
 			sourceTree = "<group>";

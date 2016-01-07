@@ -30,7 +30,7 @@
 @property (nonatomic, strong) NSArray         *itemButtons;
 @property (nonatomic, strong) UIView          *bottomView;
 
-@property (nonatomic, assign) CGPoint         foldCenter;
+@property (nonatomic, assign) CGPoint         flodCenter;
 @property (nonatomic, assign) CGPoint         bloomCenter;
 
 @property (nonatomic, assign) CGSize          flodSize;
@@ -58,7 +58,7 @@
     if ( self = [super init]) {
         
         self.itemButtons = itemButtons;
-        self.foldCenter = center;
+        self.flodCenter = center;
         self.bloomCenter = CGPointMake([UIScreen mainScreen].bounds.size.width/2, [UIScreen mainScreen].bounds.size.height/2);
         
         self.flodSize = size;
@@ -72,13 +72,13 @@
         self.isBloomed = NO;
         
         //config self
-        CGRect frame = CGRectMake(self.foldCenter.x - self.flodSize.width/2, self.foldCenter.y - self.flodSize.height/2, self.flodSize.width, self.flodSize.height);
+        CGRect frame = CGRectMake(self.flodCenter.x - self.flodSize.width/2, self.flodCenter.y - self.flodSize.height/2, self.flodSize.width, self.flodSize.height);
         self.frame = frame;
         
         //config bottom
         self.bottomView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.bloomSize.width, self.bloomSize.height)];
         self.bottomView.backgroundColor = [UIColor blackColor];
-        self.bottomView.alpha = 0.1f;
+        self.bottomView.alpha = 0.4f;
         self.bottomView.hidden = YES;
         [self addSubview:self.bottomView];
         
@@ -113,10 +113,21 @@
 
 #pragma mark - Private Method
 - (void) flod{
+    self.frame = CGRectMake(self.flodCenter.x - self.flodSize.width/2, self.flodCenter.y - self.flodSize.height/2, self.flodSize.width, self.flodSize.height);
+    self.centerButton.frame = CGRectMake(0, 0, self.flodSize.width, self.flodSize.height);
+    self.bottomView.hidden = YES;
+    
+    
     
 }
 
 - (void) bloom{
+    self.frame = CGRectMake(0, 0, self.bloomSize.width, self.bloomSize.height);
+    self.centerButton.frame = CGRectMake(self.flodCenter.x - self.flodSize.width/2, self.flodCenter.y - self.flodSize.height/2, self.flodSize.width, self.flodSize.height);
+    self.bottomView.hidden = NO;
+    
+    
+    
     
 }
 

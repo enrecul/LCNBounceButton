@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "70C9A9B2CBBB77EB9CE657E0D3D1720FA55C3DF6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "70C9A9B2CBBB77EB9CE657E0D3D1720FA55C3DF6" : 0,
+    "8333BFAA82C6C74D33B4114A0086871A68F0FCBF" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F2869636-0B22-45D1-BD41-48EB61537DB0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "70C9A9B2CBBB77EB9CE657E0D3D1720FA55C3DF6" : "LCNBounceButton\/",
+    "8333BFAA82C6C74D33B4114A0086871A68F0FCBF" : "LCNBounceButton\/LCNBounceButton\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "LCNBounceButton",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "LCNBounceButton.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/enrecul\/LCNBounceButton.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "70C9A9B2CBBB77EB9CE657E0D3D1720FA55C3DF6"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/enrecul\/LCNBounceButton.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8333BFAA82C6C74D33B4114A0086871A68F0FCBF"
+    }
+  ]
+}

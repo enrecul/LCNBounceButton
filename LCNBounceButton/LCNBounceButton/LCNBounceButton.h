@@ -25,11 +25,15 @@ typedef NS_ENUM(NSUInteger, kBloomDirection){
 
 @end
 
+//=====================================================================
+
 @interface LCNBounceItemButton : UIButton
 
 @property (nonatomic, strong) id<LCNBounceButtonDelegate> delegate;
 
 @end
+
+//=====================================================================
 
 @interface LCNBounceButton : UIView
 
