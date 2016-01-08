@@ -20,10 +20,10 @@
     
     NSMutableArray *array = [NSMutableArray array];
     
-    for (int i = 0 ; i < 20; i++) {
+    for (int i = 0 ; i < 5; i++) {
         LCNBounceItemButton *button = [LCNBounceItemButton buttonWithType:UIButtonTypeCustom];
         [button setBackgroundColor:[UIColor blueColor]];
-        button.frame = CGRectMake(0, 0, 2, 2);
+        button.frame = CGRectMake(0, 0, 20, 20);
         [array addObject:button];
     }
     
