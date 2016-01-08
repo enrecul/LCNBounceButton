@@ -18,11 +18,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    NSMutableArray *array = [NSMutableArray array];
+    
+    for (int i = 0 ; i < 20; i++) {
+        LCNBounceItemButton *button = [LCNBounceItemButton buttonWithType:UIButtonTypeCustom];
+        [button setBackgroundColor:[UIColor blueColor]];
+        button.frame = CGRectMake(0, 0, 2, 2);
+        [array addObject:button];
+    }
+    
     LCNBounceButton *button = [[LCNBounceButton alloc] initWithButtonCenter:self.view.center
-                                                                 buttonSize:CGSizeMake(50, 50)
-                                                                 bloomAngle:120 bloomRadius:120
+                                                                 buttonSize:CGSizeMake(30, 30)
+                                                                 bloomAngle:120
+                                                                bloomRadius:100
                                                              bloomDirection:kBloomDirectionTop
-                                                                itemButtons:[NSArray array]];
+                                                                itemButtons:array];
+    
+    button.duration = .5f;
+    button.allowRotation = YES;
     
     [self.view addSubview:button];
     

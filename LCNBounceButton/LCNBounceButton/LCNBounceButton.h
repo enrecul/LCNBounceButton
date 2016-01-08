@@ -37,6 +37,11 @@ typedef NS_ENUM(NSUInteger, kBloomDirection){
 
 @interface LCNBounceButton : UIView
 
+@property (nonatomic, assign) BOOL    allowRotation;//default is Yes
+@property (nonatomic, assign) CGFloat duration;//default is One Second
+@property (nonatomic, strong) CAMediaTimingFunction *timeFunction;
+
+
 @property (nonatomic, strong) id<LCNBounceButtonDelegate> delegate;
 
 - (instancetype)initWithButtonCenter:(CGPoint)center
